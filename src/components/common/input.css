@@ -1,0 +1,19 @@
+
+
+.input-box input{
+    background-color: var(--color-bg);
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid;
+    border-color: #696969;
+    border-width: 1px;
+    outline: none;
+    color: #FFFFFF;
+}
+
+.danger-alert{
+    font-size: 14px;
+    color: rgb(241, 81, 81);
+
+}

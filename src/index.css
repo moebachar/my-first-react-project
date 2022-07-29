@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Inter&family=M+PLUS+Rounded+1c&family=Outfit:wght@200&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@1,300&family=Rosario&family=Rubik:wght@300;400;500;600&family=Ruda&family=Signika&display =swap');
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  --font-family: 'Rubik', sans-serif;
+  --color-bg: #1A191A;
+  --color-btn: #FF6333;
+  --color--footer: #878787;
+
+
+
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  color: #fff;
+
+}
+

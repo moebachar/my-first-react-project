@@ -1,0 +1,382 @@
+.our-courses{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7%;
+    margin: 75px  0;
+    gap:75px;
+
+
+    &__heading{
+        font-size: 66px;
+        line-height: 85px;
+    }
+    &__heading img{
+        width: 100px;
+    }
+
+    &__main{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 100px;
+
+        &__img{
+            width: 60%;
+        }
+        &__description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap:30px;
+            width:40%;
+
+            &__heading{
+                font-size: 40px;
+                font-weight: 500;
+                
+            }
+
+            &__text{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+            }
+            
+            &__registration{
+                background-color: var(--color-bg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                box-sizing: border-box;
+                width: 150px;
+                height: 44px;
+                border: 1px solid #FF6333;
+                border-radius: 41px;
+                font-family: var(--font-family);
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 12px;
+                color: #FF6333;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                
+            }
+    
+            &__registration img{
+                width: 15px;
+            }
+            &__registration:hover{
+                background-color: #2e2d2e;
+            }
+
+            
+        }
+
+        &__img img{
+            width: 100%;
+            height: auto;
+        }
+        
+
+    }
+
+    &__courses{
+        display: flex;
+        gap: 100px;
+        &__container{
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           
+           &__name{
+            font-size: 18px;
+            text-indent: 2px;
+            font-feature-settings: 'liga' off;
+            color: #A5A5A5;
+           }
+
+           &__heading{
+            font-size: 24px;
+            line-height: 28px;
+           }
+
+           &__footer{
+            display: flex;
+            align-items: flex-start ;
+            justify-content: flex-start;
+
+            &--img{
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            &--img img{
+                width: 75px;
+            }
+
+            &--text{
+                font-size: 18px;
+                line-height: 27px;
+                text-indent: 2px;
+                font-feature-settings: 'liga' off;
+            }
+
+           }
+
+
+        }
+
+    }
+
+    &__registration--sub{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1134px) {
+    .our-courses{
+
+        &__heading{
+            font-size: 46px;
+        }
+        &__heading img{
+            width: 75px;
+        }
+        &__heading img{
+            width: 75px;
+        }
+    
+        &__main{
+            gap: 50px;
+            &__description{
+    
+                &__heading{
+                    font-size: 30px;
+                }
+    
+                &__text{
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            
+        }
+
+        &__courses{
+
+            gap: 50px;
+            &__container{
+
+               gap: 10px;
+               
+               &__name{
+                font-size: 16px;
+                text-indent: 2px;
+
+               }
+    
+               &__heading{
+                font-size: 18px;
+                line-height: 28px;
+               }
+    
+               &__footer{
+
+                &--img img{
+                    width: 50px;
+                }
+    
+                &--text{
+                    font-size: 14px;
+                    line-height: 27px;
+                }
+    
+               }
+    
+            }
+    
+        }
+        
+    
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .our-courses{
+
+        &__heading{
+            font-size: 30px;
+        }
+        &__heading img{
+            width: 50px;
+        }
+    
+        &__main{
+            gap: 50px;
+            &__description{
+    
+                &__heading{
+                    font-size: 24px;
+                }
+    
+                &__text{
+                    font-size: 10px;
+                    line-height: 16px;
+                }
+            }
+            
+        }
+
+        &__courses{
+
+            gap: 30px;
+            &__container{
+
+               gap: 5px;
+               
+               &__name{
+                font-size: 14px;
+                text-indent: 2px;
+
+               }
+    
+               &__heading{
+                font-size: 16px;
+                line-height: 28px;
+               }
+    
+               &__footer{
+
+                &--img img{
+                    width: 40px;
+                }
+    
+                &--text{
+                    font-size: 12px;
+                    line-height: 27px;
+                }
+    
+               }
+    
+            }
+    
+        }
+
+        
+
+        
+    }
+}
+
+
+@media (max-width: 800px) {
+    .our-courses{
+        
+        &__heading{
+            font-size: 30px;
+        }
+    
+        &__main{
+            gap: 50px;
+            flex-direction: column;
+
+            &__description{
+                width: 70%;
+    
+                &__heading{
+                    font-size: 24px;
+                }
+    
+                &__text{
+                    font-size: 10px;
+                    line-height: 16px;
+                    width: 60%;
+                }
+                &__registration{
+                    display: none;
+                }
+            }
+
+            &__img{
+                display: none;
+            }
+            
+        }
+
+        &__courses{
+            flex-direction: column;
+
+            gap: 75px;
+            &__container{
+
+               gap: 10px;
+               
+               &__name{
+                font-size: 16px;
+                text-indent: 2px;
+
+               }
+    
+               &__heading{
+                font-size: 18px;
+                line-height: 28px;
+               }
+    
+               &__footer{
+
+                &--img img{
+                    width: 50px;
+                }
+    
+                &--text{
+                    font-size: 14px;
+                    line-height: 27px;
+                }
+    
+               }
+    
+            }
+    
+        }
+
+        
+
+        &__registration--sub{
+            background-color: var(--color-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            box-sizing: border-box;
+            width: 150px;
+            height: 44px;
+            border: 1px solid #FF6333;
+            border-radius: 41px;
+            font-family: var(--font-family);
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 12px;
+            color: #FF6333;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            margin: 0 auto;
+            
+        }
+
+        &__registration--sub img{
+            width: 15px;
+        }
+        &__registration--sub:hover{
+            background-color: #2e2d2e;
+        }
+
+        
+    }
+}

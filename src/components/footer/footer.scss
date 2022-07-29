@@ -1,0 +1,187 @@
+.footer{
+    background-color: black;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__slogan{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+
+        &__logo-holder{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            & img{
+                width: 50px;
+            }
+
+            &__gadz-it{
+                font-family: 'Aleo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &__text{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: -0.231818px;
+
+            color: #E3EDFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+       
+    }
+
+    &__navigation{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 3px 0px;
+        gap: 60px;
+    }
+
+    &__media{
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+
+        &__facebook{
+            width: 11px;
+        }
+
+        &__instagram{
+            width: 20px;
+        }
+
+        &__youtube{
+            width: 25px;
+        }
+    }
+
+
+    &__copyright{
+        font-size: 16px;
+        line-height: 20px;
+        font-feature-settings: 'liga' off;
+        color: #909090;
+    }
+
+}
+
+
+@media (max-width: 1670px) {
+    .footer{
+        gap: 40px;
+    
+        &__slogan{
+            display: flex;
+            align-items: center;
+            gap: 80px;
+    
+            &__logo-holder{
+
+                gap: 15px;
+    
+                & img{
+                    width: 40px;
+                }
+    
+                &__gadz-it{
+                   font-size: 24px;
+                }
+            }
+    
+            &__text{
+                font-size: 16px;
+                font-size: 600;
+            }
+    
+           
+        }
+    
+        &__navigation{
+            gap: 50px;
+        }
+    
+        &__media{
+            gap: 40px;
+        }
+    
+    
+        &__copyright{
+            font-size: 16px;
+        }
+    
+    }
+    
+}
+
+@media (max-width: 1134px) {
+    .footer{
+        gap: 40px;
+    
+        &__slogan{
+            display: flex;
+            align-items: center;
+            gap: 80px;
+    
+            &__logo-holder{
+                gap: 15px;
+    
+                & img{
+                    width: 40px;
+                }
+    
+                &__gadz-it{
+                   font-size: 22px;
+                }
+            }
+    
+            &__text{
+                font-size: 14px;
+                font-size: 600;
+            }
+    
+           
+        }
+    
+        &__navigation{
+            gap: 50px;
+            font-size: 14px;
+        }
+    
+        &__media{
+            gap: 40px;
+        }
+    
+    
+        &__copyright{
+            font-size: 14px;
+        }
+    
+    }
+}
+
+@media (max-width: 800px) {
+    .footer{
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

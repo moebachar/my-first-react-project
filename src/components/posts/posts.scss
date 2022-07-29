@@ -1,0 +1,530 @@
+.activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 7%;
+    gap: 30px;
+
+    &__heading{
+        font-size: 66px;
+        line-height: 85px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-items: flex-end;
+
+        img{
+            width: 100px;
+        }
+
+        &__show-all{
+            background-color: var(--color-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            box-sizing: border-box;
+            width: 100px;
+            height: 44px;
+            border: 1px solid #FF6333;
+            border-radius: 41px;
+            font-family: var(--font-family);
+            font-size: 12px;
+            line-height: 12px;
+            color: #FF6333;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            margin-left: auto;
+
+            img{
+                width: 15px;
+            }
+        }
+
+        &__show-all:hover{
+            background-color: #2e2d2e;
+        }
+    }
+    
+
+    &__text{
+        width:70%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-indent: 2px;
+        font-feature-settings: 'liga' off;
+    }
+
+    &__posts{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 40% 30% 30%;
+        width: 100%;
+        
+        &__post{
+            
+            
+            &--prim{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1.5px);
+                padding: 4%;
+                grid-column: 1;
+                grid-row: 1/3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 40px;
+                align-items: flex-start;
+                height: 100%;
+                & img{
+                    width: 100%;
+
+                   
+                }
+                
+                &__heading{
+                    font-size: 28px;
+                }
+
+                &__sub-heading{
+                    font-feature-settings: 'liga' off;
+                    color: #b3b3b3;
+                }
+
+                &__text{
+                    font-family: 'Outfit', sans-serif;
+                }
+                
+                &__writer{
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                }
+            }
+
+            
+            &--sec{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1.5px);
+                grid-column: 2/4;
+                grid-row: 1;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+
+                & img{
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                &__heading{
+                    font-size: 28px;
+                }
+
+                &__sub-heading{
+                    font-feature-settings: 'liga' off;
+                    color: #b3b3b3;
+                }
+
+                &__text{
+                    font-family: 'Outfit', sans-serif;
+                }
+                
+                &__writer{
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                }
+            }
+            &--ord1{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1.5px);
+                grid-column: 2 ;
+                grid-row: 2 ;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+               
+                & img{
+                    width: 40%;
+                    margin: 0 auto;
+                }
+                &__heading{
+                    font-size: 28px;
+                }
+
+                &__sub-heading{
+                    font-feature-settings: 'liga' off;
+                    color: #b3b3b3;
+                }
+
+                &__text{
+                    font-family: 'Outfit', sans-serif;
+                }
+                
+                &__writer{
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                }
+            }
+            &--ord2{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1.5px);
+                grid-column: 3 ;
+                grid-row: 2 ;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+                & img{
+                    width: 40%;
+                    margin: 0 auto;
+                }
+                &__heading{
+                    font-size: 28px;
+                }
+
+                &__sub-heading{
+                    font-feature-settings: 'liga' off;
+                    color: #b3b3b3;
+                }
+
+                &__text{
+                    font-family: 'Outfit', sans-serif;
+                }
+                
+                &__writer{
+                    font-family: 'M PLUS Rounded 1c', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1134px) {
+    .activities{
+
+        &__heading{
+            font-size: 46px;
+            img{
+                width: 75px;
+            }
+            &__show-all{
+                img{
+                    width: 15px;
+                }
+            }
+        }
+    
+        &__text{   
+            font-size: 16px;
+            width: 70%;
+        }
+
+        &__posts{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 30% 30% 30%;
+            width: 100%;
+            
+            &__post{
+                
+                
+                &--prim{
+                    &__heading{
+                        font-size: 24px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 14px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                }
+    
+                
+                &--sec{
+                    &__heading{
+                        font-size: 24px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 14px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                }
+                &--ord1{
+                    &__heading{
+                        font-size: 24px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 14px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 14px;
+                    }
+                }
+                &--ord2{
+                    &__heading{
+                        font-size: 24px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 14px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 14px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .activities{
+
+        &__heading{
+            font-size: 30px;
+            img{
+                width: 50px;
+            }
+            &__show-all{
+                img{
+                    width: 15px;
+                }
+            }
+        }
+
+        &__text{   
+            font-size: 14px;
+        }
+        &__posts{
+         
+            
+            &__post{
+                
+                
+                &--prim{
+                    &__heading{
+                        font-size: 22px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 10px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                }
+    
+                
+                &--sec{
+                    &__heading{
+                        font-size: 22px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 10px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                }
+                &--ord1{
+                    &__heading{
+                        font-size: 22px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 10px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 10px;
+                    }
+                }
+                &--ord2{
+                    &__heading{
+                        font-size: 22px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 10px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 10px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width: 800px) {
+    .activities{
+        
+        &__heading{
+            font-size: 30px;
+        }
+
+        &__posts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__post{
+                
+                
+                &--prim{
+                    &__heading{
+                        font-size: 26px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 16px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 16px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 16px;
+                    }
+                    
+                }
+    
+                
+                &--sec{
+                    &__heading{
+                        font-size: 26px;
+                    }
+    
+                    &__sub-heading{
+                        font-feature-settings: 'liga' off;
+                        color: #b3b3b3;
+                        font-size: 16px;
+                    }
+    
+                    &__text{
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 16px;
+                    }
+                    
+                    &__writer{
+                        font-family: 'M PLUS Rounded 1c', sans-serif;
+                        font-size: 16px;
+                    }
+                    
+                }
+                &--ord1{
+                    display: none;
+                }
+                &--ord2{
+                    display: none;
+                }
+            }
+        }
+    
+    }    
+}

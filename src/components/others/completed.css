@@ -1,0 +1,38 @@
+.completed{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.completed img{
+    max-height: 70%;
+}
+
+.completed a{
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 44px;
+    border: 1px solid #FF6333;
+    border-radius: 41px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 12px;
+    color: #FF6333;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.completed a:hover{
+    background-color: #2e2d2e;
+}

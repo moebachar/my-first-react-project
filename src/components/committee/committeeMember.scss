@@ -1,0 +1,284 @@
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        width: 300px;
+        border-radius: 100%;
+        margin-bottom: 30px;
+        
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+
+        & div{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+
+        }
+
+        &__name{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-indent: 2px;
+            font-feature-settings: 'liga' off;
+        }
+
+        &__role{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-indent: 2px;
+            font-feature-settings: 'liga' off;
+            color:rgb(175, 177, 182);
+        }
+
+
+        &__message-icon:hover{
+            animation: grow-up .5s  forwards;
+            cursor: pointer;
+        }
+
+        &__message-icon{
+            height: 40px;
+            
+        }
+
+        
+    }
+
+
+}
+
+
+.contact-member{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+
+
+    &__heading{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-indent: 2px;
+        font-feature-settings: 'liga' off;
+
+        & span{
+            font-size: 12px;
+            color:#888382;
+        }
+    }
+
+
+    & form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+
+
+        & button{
+            background-color: var(--color-bg);
+            box-sizing: border-box;
+            width: 50px;
+            height: 30px;
+            border: 1px solid #FF6333;
+            border-radius: 41px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FF6333;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+
+            &:hover{
+                background-color: #2e2d2e;
+            }
+            
+        }
+
+        & button:disabled{
+            color: #524f4e;
+        }
+    }
+
+    &__form__buttons{
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+    }
+    
+   
+
+}
+
+
+
+
+@media (max-width: 1670px) {
+
+    .member{
+       
+    
+        &__img{
+            width: 200px;
+
+        }
+
+        &__info{
+           
+            &__name{
+                font-size: 16px;
+                
+            }
+    
+            &__role{
+                font-size: 16px;
+                text-indent: 2px;
+            }
+            
+        }
+    }
+
+
+    .contact-member{
+        justify-content: flex-start;
+        gap: 50px;
+    
+    
+        &__heading{
+            font-weight: 500;
+            font-size: 16px;
+    
+            & span{
+                font-size: 10px;
+
+            }
+        }
+    
+    
+        & form{
+
+            gap: 25px;
+    
+    
+            & button{
+                width: 45px;
+                height: 25px;
+                font-size: 14px;         
+            }
+    
+            
+        }
+    
+        &__form__buttons{
+
+            gap: 130px;
+        }
+        
+       
+    
+    }
+
+
+    
+}
+
+
+
+@media (max-width: 900px) {
+
+    .member{
+       
+    
+        &__img{
+            width: 150px;
+
+        }
+        &__info{
+           
+            &__name{
+                font-size: 14px;
+                
+            }
+    
+            &__role{
+                font-size: 14px;
+                text-indent: 2px;
+            }
+            
+        }
+    }
+    
+}
+
+@media (max-width: 900px) {
+
+    .member{
+       
+    
+        &__img{
+            width: 170px;
+
+        }
+    }
+
+    .contact-member{
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+    
+        &__heading{
+            font-weight: 500;
+            font-size: 18px;
+    
+            & span{
+                font-size: 12px;
+
+            }
+        }
+    
+    
+        & form{
+
+            gap: 30px;
+    
+    
+            & button{
+                width: 50px;
+                height: 30px;
+                font-size: 16px;         
+            }
+    
+            
+        }
+    
+        &__form__buttons{
+
+            gap: 150px;
+        }
+        
+       
+    
+    }
+    
+}
+
+
+@keyframes grow-up {
+    to{transform: translateY(-6px);}
+}

@@ -1,0 +1,337 @@
+.members{
+    display: flex;
+    flex-direction: column;
+
+    padding: 7%;
+    margin: 75px  0;
+    &__heading{
+        font-size: 66px;
+        line-height: 85px;
+        margin-bottom: 50px;
+    }
+
+    &__heading img{
+        width: 100px;
+        margin-right: 2%;
+       
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+
+        &__img{
+            width: 40%;
+            
+        
+        }
+
+        &__img img{
+            width: 100%;
+            max-width: fit-content;
+            border-radius: .6rem;
+        }
+
+        &__text{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 50px;
+
+
+            &__name{
+                font-size: 40px;
+                line-height: 47px;
+                text-align: center;
+            }
+
+            &__description{
+                display: flex;
+                justify-content: center;
+                font-size: 16px;
+                line-height: 21px;
+                text-indent: 2px;
+                font-feature-settings: 'liga' off;
+                max-width: 568px;
+            }
+
+            &__description div{
+                font-family: 'Ruda', sans-serif;
+                font-size: 72px;
+                line-height: 27px;
+                text-indent: 2px;
+            }
+
+            &__role-year{
+
+                &--role{
+                    font-size: 20px;
+                    text-indent: 2px;
+                }
+
+                &--year{
+                    text-indent: 2px;
+                    font-feature-settings: 'liga' off;
+                    color: #9E9E9E;
+                }
+            }
+
+            &__contact{
+                width:100%;
+                display: flex;
+                justify-content: flex-end;
+                gap:5%;
+            }
+
+            &__filters{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__buttons{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    
+                }
+
+                &__buttons button{
+                    background-color: var(--color-bg);
+                    border: none;
+                    font-size: 24px;
+                    line-height: 27px;
+                    text-indent: 2px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+                &__buttons button:disabled{
+                    color: #4d4a4a;                 
+                }
+
+                &__buttons hr{
+                    width: 75px;
+                    background-color: white;
+                    height: 3px;
+                }
+
+                &__search-bar input{
+                    background-color: var(--color-bg);
+                    border-top:none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: solid;
+                    border-color: #696969;
+                    border-width: 1px;
+                    outline: none;
+                    color: #FFFFFF;
+                }
+
+
+            }
+        }
+        
+
+       
+    }
+}
+
+
+
+@media (max-width: 1134px) {
+    .members{
+        &__heading{
+            font-size: 46px;
+            line-height: 85px;
+        }
+
+        &__heading img{
+            width: 75px;
+        }
+
+        &__content{
+    
+            &__text{
+
+                &__name{
+                    font-size: 30px;
+                }
+    
+                &__description{
+                    font-size: 14px;
+                }
+    
+                &__role-year{
+    
+                    &--role{
+                        font-size: 18px;
+                        
+                    }
+    
+                    &--year{
+                        font-size: 16px;
+                    }
+                }
+    
+                
+    
+                &__filters{
+    
+                    &__buttons button{
+                        font-size: 20px;
+                    }
+    
+                    &__buttons hr{
+                        width: 50px;
+                        height: 1.5px;
+                    }
+    
+                }
+            }
+   
+        }
+
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .members{
+        &__heading{
+            font-size: 30px;
+            line-height: 85px;
+        }
+
+        &__heading img{
+            width: 50px;
+        }
+
+        &__content{
+
+           
+    
+            &__text{
+                
+                &__name{
+                    font-size: 20px;
+                }
+    
+                &__description{
+                    font-size: 12px;
+                }
+    
+                &__role-year{
+    
+                    &--role{
+                        font-size: 18px;
+                        
+                    }
+    
+                    &--year{
+                        font-size: 16px;
+                    }
+                }
+    
+                
+    
+                &__filters{
+    
+                    &__buttons button{
+                        font-size: 20px;
+                    }
+    
+                    &__buttons hr{
+                        width: 50px;
+                        height: 1.5px;
+                    }
+    
+                }
+            }
+   
+        }
+
+    
+    }
+}
+
+
+@media (max-width: 800px) {
+    .members{
+        &__heading{
+            font-size: 30px;
+            line-height: 85px;
+        }
+
+        &__heading img{
+            width: 50px;
+            
+        }
+
+        &__content{
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+
+            &__img img{
+                border: none;
+                border-radius: 100%;
+            }
+    
+            &__text{
+                justify-content: center;
+                align-items: center;
+                &__name{
+                    font-size: 22px;
+                }
+    
+                &__description{
+                    font-size: 14px;
+                }
+                
+                &__contact{
+                    justify-content: center ;
+                    gap: 15%;
+                }
+    
+                &__role-year{
+                    flex
+    
+                    &--role{
+                        font-size: 18px;
+                        
+                    }
+    
+                    &--year{
+                        font-size: 16px;
+                    }
+                }
+    
+                
+    
+                &__filters{
+                    flex-direction: column;
+
+                    gap: 50px;
+    
+                    &__buttons button{
+                        font-size: 15px;
+                    }
+    
+                    &__buttons hr{
+                        width: 50px;
+                        height: 1.5px;
+                    }
+    
+                }
+            }
+   
+        }
+
+    
+    }
+}

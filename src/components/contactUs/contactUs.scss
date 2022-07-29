@@ -1,0 +1,125 @@
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 7%;
+    margin: 75px  0;
+
+    &__heading{
+        font-size: 66px;
+        line-height: 85px;
+        margin-bottom: 50px;
+        
+        
+    }
+
+    &__form {
+        display: flex;
+        justify-content: flex-start;
+        gap: 100px;
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            width: 50%;
+            & div{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+            }
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            gap: 40px;
+
+            & div{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+            }
+
+            & button{
+                background-color: var(--color-bg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                box-sizing: border-box;
+                width: 80px;
+                height: 35px;
+                border: 1px solid #FF6333;
+                border-radius: 41px;
+                font-family: var(--font-family);
+                font-size: 12px;
+                line-height: 12px;
+                color: #FF6333;
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+
+            }
+    
+            & button img{
+                width: 15px;
+            }
+            & button:hover{
+                background-color: #2e2d2e;
+            }
+            
+            & button:disabled{
+                color: #524f4e;
+            }
+        }
+
+    }
+
+    
+}
+
+
+@media (max-width: 1134px) {
+    .contact-us{
+        &__heading{
+            font-size: 46px;
+            line-height: 85px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-us{
+        &__heading{
+            font-size: 30px;
+            line-height: 85px;
+        }  
+    
+    }
+
+    
+}
+
+
+@media (max-width: 800px) {
+    .contact-us{
+       
+
+        &__form {
+            padding: 0 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+
+        }
+    
+    }
+
+    
+}
+

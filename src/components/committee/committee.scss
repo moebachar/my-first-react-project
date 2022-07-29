@@ -1,0 +1,33 @@
+.committee{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 7%;
+    margin: 75px  0;
+
+    &__heading{
+        font-size: 66px;
+        line-height: 85px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 1134px) {
+    .committee{
+        &__heading{
+            font-size: 46px;
+            line-height: 85px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .committee{
+        &__heading{
+            font-size: 30px;
+            line-height: 85px;
+        }
+    }
+}
+

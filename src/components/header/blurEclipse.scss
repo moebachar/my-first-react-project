@@ -1,0 +1,47 @@
+.blur-eclipse{
+    position: absolute;
+    width: 75%;
+    height: 720px;
+    left: -80px;
+    top: 47px;
+    z-index: -1;
+    transform: scale(.7);
+}
+
+.eclipse{
+
+    width: 366px;
+    height: 365px;
+    left: 413px;
+    top: 83px;
+
+    background: linear-gradient(180deg, rgba(255, 122, 0, 0) 0%, #FF5858 100%);
+    filter: blur(200px);
+}
+
+.rectangle{
+
+    width: 337px;
+    height: 390px;
+    left: 383px;
+    top: 204px;
+
+    background: linear-gradient(180deg, rgba(0, 15, 48, 0.4) 0%, rgba(0, 48, 153, 0.4) 100%);
+    filter: blur(150px);
+    transform: translateY(-100px);
+}
+
+@media (max-width: 800px) {
+    .blur-eclipse{
+        position: absolute;
+        width: 75%;
+        height: 720px;
+        left: -85px;
+        top: 47px;
+        z-index: -1;
+        transform: scale(.7);
+        transform: translateX(200px);
+    }
+    
+}
+
