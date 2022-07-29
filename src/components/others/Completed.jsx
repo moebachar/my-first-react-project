@@ -16,7 +16,7 @@ function Completed(props) {
             <div className="completed">
                 <img src={valid} />
                 <div>Your application had successfully submited. <br/> be in the {place} at {hour} {day} for your interview</div>
-                <a onClick={() => navigate('/')}>Home</a>
+                <a onClick={() => navigate('/my-first-react-project/')}>Home</a>
             </div>
             }
 

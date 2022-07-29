@@ -43,7 +43,7 @@ class JoinFrom extends Form {
         const responseStatus = 'success';
         const {place, hour} = this.state;
         const {day} = this.state.data;
-        this.props.navigate(`/completed/${responseStatus}/${day}/${place}/${hour}`, {replace: true});
+        this.props.navigate(`/my-first-react-project/completed/${responseStatus}/${day}/${place}/${hour}`, {replace: true});
         
     
     };

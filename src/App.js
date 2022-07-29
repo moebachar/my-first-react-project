@@ -12,13 +12,14 @@ import Error404 from './components/others/Error404';
 function App() {
   const blogs = getBlogs();
   const members = getMembers();
+  const prefix = '/my-first-react-project/';
   return (
     <>
        <Routes>
         
-        <Route path='/completed/:success/:day/:place/:hour' element={ <Completed />} />
-        <Route path='/join-form' element={<JoinFrom />}/>
-        <Route path='/' element={<Landing blogs={blogs} members={members} />}/>
+        <Route path='/my-first-react-project/completed/:success/:day/:place/:hour' element={ <Completed />} />
+        <Route path='/my-first-react-project/join-form' element={<JoinFrom />}/>
+        <Route path='/my-first-react-project/' element={<Landing blogs={blogs} members={members} />}/>
         <Route path='*' element={<Error404 />} />
         
       </Routes>  
