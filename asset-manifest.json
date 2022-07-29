@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/my-first-react-project/static/css/main.30d63759.css",
+    "main.js": "/my-first-react-project/static/js/main.b767d62e.js",
+    "static/js/787.62356f64.chunk.js": "/my-first-react-project/static/js/787.62356f64.chunk.js",
+    "static/media/css3.png": "/my-first-react-project/static/media/css3.5d1e9b1f4ab7f72ce7bc.png",
+    "static/media/binary-coding.png": "/my-first-react-project/static/media/binary-coding.ec86a60e097ecb305b34.png",
+    "static/media/html.png": "/my-first-react-project/static/media/html.edb334b841dbb79cce57.png",
+    "static/media/c-plus-plus.png": "/my-first-react-project/static/media/c-plus-plus.4f3519f9c53ea7f740ce.png",
+    "static/media/python.png": "/my-first-react-project/static/media/python.88de7ab5cea439efc568.png",
+    "static/media/studying.png": "/my-first-react-project/static/media/studying.c9af846d6854f74e28fa.png",
+    "static/media/wave.png": "/my-first-react-project/static/media/wave.e4c389452cd927b3d2ce.png",
+    "static/media/404-page.svg": "/my-first-react-project/static/media/404-page.6a8ddddc9eb985fd191e8ff72e22be6f.svg",
+    "static/media/Completed-bro.svg": "/my-first-react-project/static/media/Completed-bro.e6618bfd212593144707a65f03bb336b.svg",
+    "static/media/data-pana.svg": "/my-first-react-project/static/media/data-pana.641baea0e1a8fb0d09bd1f95e82ddceb.svg",
+    "static/media/Typing-bro.svg": "/my-first-react-project/static/media/Typing-bro.10d07e09c8ccb2f6e399782724080d88.svg",
+    "static/media/revicons.eot": "/my-first-react-project/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/my-first-react-project/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/my-first-react-project/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/back-tics.svg": "/my-first-react-project/static/media/back-tics.da225f82b9c27641edad894b19dd4b69.svg",
+    "static/media/email.svg": "/my-first-react-project/static/media/email.2332ac74fde56070cb33b1afb7c6178a.svg",
+    "static/media/phone.svg": "/my-first-react-project/static/media/phone.f585be26826c34d468e0f230f8c49927.svg",
+    "index.html": "/my-first-react-project/index.html",
+    "static/media/name.svg": "/my-first-react-project/static/media/name.0f201ea05e1fe14a9b06a6c0f6e75c32.svg",
+    "main.30d63759.css.map": "/my-first-react-project/static/css/main.30d63759.css.map",
+    "main.b767d62e.js.map": "/my-first-react-project/static/js/main.b767d62e.js.map",
+    "787.62356f64.chunk.js.map": "/my-first-react-project/static/js/787.62356f64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30d63759.css",
+    "static/js/main.b767d62e.js"
+  ]
+}
